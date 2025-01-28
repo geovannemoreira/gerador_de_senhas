@@ -75,11 +75,23 @@ def criar_senha():
     return
 
   senha = ''.join(random.choices(caracteres, k=comprimento))
- # Se a senha tiver mais de 9 caracteres, colocar até 9 caracteres e adicionar "..." de cor diferente
+  # Se a senha tiver mais de 9 caracteres, colocar até 9 caracteres e adicionar "..." de cor diferente
   if len(senha) > 7:
     app_senha['text'] = f'{senha[:6]}...'
   else:
     app_senha['text'] = senha
+  # se não quiser o if else dos 9 caracteres, pode usar apenas essa linha alinhada com o senha = ''.join(random.choices(caracteres, k=comprimento)) e apague o if
+
+'''
+se assim como eu você gosta de opções diferentes e for mais 
+de visualizar o código, você pode usar o código abaixo para
+adicionar mais opções de caracteres especiais, letras e números
+ou modificar a parte onde esta o ''if len(senha) > 7:'' para
+um número maior ou menor de caracteres.
+eu prefiro que a senha tenha no máximo 9 caracteres visíveis
+e o restante seja substituído por "..." para não ocupar muito espaço
+e não ficar muito feio na tela.
+'''
 
 # Configuração do frame main
 ## Tela onde exibe a senha

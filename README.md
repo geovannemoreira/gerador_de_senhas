@@ -12,6 +12,19 @@ Este projeto foi desenvolvido com base no tutorial disponibilizado por
 
 Alterações foram feitas para uso exclusivo em estudos próprios.
 
+## Em funcionalidade
+### Interface simples e intuitiva.
+![Interface do aplicativo sem interação sendo realizada](./inicio.png)
+
+### Entrada de dados.
+![Temos 4 opções para gerar as senhas e precisa ser marcado pelo menos uma para funcionar](./selecionar.png)
+
+### Caso contrário uma mensagem de erro aparece
+![Mensagem de erro caso não selecione nenhuma chack-box e tente gerar uma senha](./erro.png)
+
+### Se tudo ocorrer bem é só copiar o número gerado e colar
+![Após selecionar quais caracteres vai utilizar na senha e quantos serão utilizados, você gera a senha e copia](./senha_copiada.png)
+
 ## Tecnologias Utilizadas
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
