@@ -5,10 +5,10 @@ import string
 from PIL import Image, ImageTk
 
 # Cores
-cor_1 = "#0a0a0a"  
-cor_2 = "#1f8f1f"   
-cor_3 = "#21c25c" 
-cor_4 = "#bb9" 
+cor_1 = "#0a0a0a" 
+cor_2 = "#ffffff"
+cor_3 = "#0078D4"
+cor_4 = "#FFD700"
 
 # Configuração da janela principal
 janela = Tk()
@@ -31,7 +31,7 @@ main.grid(row=1, column=0, sticky=NSEW)
 
 # Configuração da imagem e do nome do aplicativo 
 try:
-  img = Image.open('gerador_de_senhas/logo.png')
+  img = Image.open('logo.png')
   img = img.resize((25, 25), Image.Resampling.LANCZOS)
   img = ImageTk.PhotoImage(img)
   logo = Label(header,  image=img, compound=CENTER, bg=cor_2, relief='flat')
@@ -137,7 +137,7 @@ check_4 = Checkbutton(frame_caracteres, text='!@# Símbolos', var=estado_4, bg=c
 check_4.grid(row=3, column=0, sticky=W)
 
 # Botão para gerar a senha
-botao_gerar = Button(main, text='Gerar Senha', command=criar_senha, width=20, height=1, font='Ivy 10 bold', bg=cor_4, fg=cor_2, relief='sunken', overrelief='solid')
+botao_gerar = Button(main, text='Gerar Senha', command=criar_senha, width=20, height=1, font='Ivy 10 bold', bg=cor_4, fg=cor_1, relief='sunken', overrelief='solid')
 botao_gerar.grid(row=5, column=0, columnspan=2, pady=10)
 
 
